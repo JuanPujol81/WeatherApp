@@ -1,0 +1,523 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: #443b3b;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu {
+    color: aliceblue;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    margin: 15px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.phone {
+    counter-reset: game;
+    position: relative;
+    width: 375px;
+            height: 700px;
+            border: solid black 8px;
+            border-radius: 50px;
+            box-shadow: 7px 8px 20px 0 #868686;
+            background-color: #ccefff;
+            overflow: hidden;
+}
+
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    background: transparent;
+    bottom: 0;
+    right: 70px;
+    animation-name: hide;
+    animation-duration: 2.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hide {
+    0% {
+        bottom: 0;
+    }
+    25%{
+        bottom: -80px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    background: transparent;
+    bottom: 0;
+    left: 70px;
+    animation-name: hide;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 280px;
+    height: 400px;
+    background: #bb6d50;
+    box-shadow: 7px 8px 20px 0 #868686;
+}
+
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    height: 350px;
+    width: 80px;
+    background: transparent;
+    bottom: 0;
+    left: 35px;
+    animation-name: hide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    border-radius: 20px;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 300px;
+    background: #bb6d50;
+    box-shadow: 7px 8px 20px 0 #000000af;
+}
+
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    height: 250px;
+    width: 80px;
+    background: transparent;
+    bottom: 0;
+    right: 50px;
+    animation-name: hide;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    border-radius: 20px;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    height: 200px;
+    background: #bb6d50;
+    box-shadow: 7px 8px 20px 0 #000000af;
+}
+
+.layer-8 {
+    position: absolute;
+            z-index: 8;
+            width: 240px;
+            height: 130px;
+            background: #66a167;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 50px;
+}
+
+
+.layer-9 {
+    position: absolute;
+    z-index: 9;
+    width: 180px;
+    height: 80px;
+    border-radius: 50px;
+    background: white;
+    bottom: 0;
+    left: -50px;
+}
+.layer-10 {
+    position: absolute;
+    z-index: 10;
+    width: 180px;
+    height: 80px;
+    border-radius: 50px;
+    background: white;
+    bottom: 0;
+    right: -50px;
+}
+
+.layer-9::before,
+.layer-10::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    top: -40px;
+    left: 50px;
+}
+
+.left-ear--outer {
+    position: absolute;
+    background: white;
+    width: 20px;
+    height: 50px;
+    border-radius: 90%;
+    left: 10px;
+    top: 2px;
+}
+
+.left-ear--inner{
+    position: absolute;
+    background: pink;
+    width: 10px;
+    height: 50px;
+    border-radius: 90%;
+    left: 15px;
+    top: 8px;
+}
+
+.right-ear--outer {
+    position: absolute;
+    background: white;
+    width: 20px;
+    height: 50px;
+    border-radius: 90%;
+    right: 10px;
+    top: 2px;
+}
+
+.right-ear--inner {
+    position: absolute;
+    background: pink;
+    width: 10px;
+    height: 50px;
+    border-radius: 90%;
+    right: 15px;
+    top: 8px;
+}
+
+.head {
+    position:absolute;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30px;
+    background: white;
+}
+
+.left-eye {
+    top: 14px;
+    left: 20px;
+}
+
+.right-eye {
+    top: 14px;
+    right: 20px;
+}
+
+.eye {
+    position: absolute;
+    background: gray;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.layer-3::after,
+.layer-5::after,
+.layer-7::after {
+            content: "";
+            position: absolute; 
+            left: -0px;
+            top: 0px;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(135deg, #6aa067 25%, transparent 25%) -50px 0,
+                        linear-gradient(-135deg, #6aa067 25%, transparent 25%) -50px 0,
+                        linear-gradient(45deg, #6aa067 25%, transparent 25%),
+                        linear-gradient(-45deg, #6aa067 25%, transparent 25%);
+            background-size: 40px 100px;
+            background-position: 140px 0 0 30px 0;
+            border-radius: 20px;
+        }
+
+
+    .layer-3::before,
+    .layer-5::before,
+    .layer-7::before {
+            content: "";
+            position: absolute; 
+            left: -0px;
+            top: 15px;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(135deg, #a6543d 25%, transparent 25%) -50px 0,
+                        linear-gradient(-135deg, #a6543d 25%, transparent 25%) -50px 0,
+                        linear-gradient(45deg, #a6543d 25%, transparent 25%),
+                        linear-gradient(-45deg, #a6543d 25%, transparent 25%);
+            background-size: 40px 100px;
+            background-position: 140px 0 0 30px 0;
+            border-radius: 20px;
+        }
+
+
+
+
+        .grass {
+            width: 120px;
+            height: 120px;
+            background-color: #66a167;
+            border-radius: 50%;
+            position: absolute;
+            left: 70px;
+            top: -40px;
+        }
+
+        .grass::after {
+            content: "";
+            width: 90px;
+            height: 90px;
+            background-color: #66a167;
+            border-radius: 50%;
+            position: absolute;
+            left: 90px;
+            top: 30px;
+        }
+
+        .grass::before {
+            content: "";
+            width: 90px;
+            height: 90px;
+            background-color: #66a167;
+            border-radius: 50%;
+            position: absolute;
+            left: -70px;
+            top: 30px;
+        }
+
+
+
+
+        .layer_9 {
+            position: absolute;
+            z-index: 9;
+            width: 180px;
+            height: 80px;
+            border-radius: 50px;
+            background: white;
+            bottom: 0;
+            left: -50px;
+        }
+        .layer_10 {
+            position: absolute;
+            z-index: 10;
+            width: 180px;
+            height: 80px;
+            border-radius: 50px;
+            background: white;
+            bottom: 0;
+            right: -50px;
+        }
+
+        .layer_9::before,
+        .layer_10::before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: white;
+            top: -40px;
+            left: 50px;
+        }
+
+
+        @keyframes blink {
+            0% {
+                height: 4px;
+            }
+            5% {
+                height: 1px;
+                transform: translate(0px , 2px);
+            }
+            10% {
+                height: 4px;
+                transform: translate(0px, 0px);
+            }
+        }
+
+
+        input {
+                appearance: none;
+                cursor: pointer;
+                height: 50px;
+                margin: 0;
+                position: relative;
+                top: 0;
+                width: 80px;
+                z-index: 8;
+            }
+
+            input:checked {
+                counter-increment: game;
+                
+            }
+
+            .total-score {
+                width: 80px;
+                height: 50px;
+                position: relative;
+                top: 180px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .total-score::after {
+                content: counter(game);
+            }
+
+
+            h1 {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                text-align: center  ;
+                top: 20px;
+                margin: 0 auto;
+            }
+
+            .iteraction {
+                width: 25em;
+                height: 80vh;
+                margin: 0 auto;
+                margin-right: 30px;
+                color: aliceblue;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .wrap-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                color: aliceblue;
+            }
+
+            .data-request h4 {
+                font-size: 30px;
+            }
+            
+            .form {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+            }
+            
+            .form input {
+                width: 100%;
+                margin-bottom: 1em;
+                background: none;
+                border: none;
+                border-bottom: 1px solid aliceblue;
+                color: aliceblue;
+                font-weight: bold;
+            }
+            
+            .btn-submit {
+                padding: 10px 20px;
+                margin: 1em;
+                border: none;
+                text-transform: uppercase;
+                background-color: #66a167;
+                font-weight: bold;
+                border-radius: 20px;
+                cursor: pointer;
+                box-shadow: 1px 3px 11px -5px var(--details-color);
+            }
+
+
+            .footer-wrapper {
+                margin-bottom: 30px;
+                margin-left: 0;
+                margin-top: 20%;
+                color: aliceblue;
+
+            }
+
+            .about-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 70vh;
+                color: aliceblue;
+            }
+
+            .help-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 80vh;
+            }
+
+            
+            .about-picture {
+                height: 50%;
+                margin-top: 15px;
+
+            }
+            
+.forecast-display {
+    top: 50px;
+    font-size: 25px;
+    width: 80%;
+}
