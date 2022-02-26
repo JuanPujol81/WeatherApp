@@ -38,14 +38,14 @@ app.get('', (req, res) => {
 app.get('/help', (request, response) => {
     response.render('help', {
         name: 'Juan Raul Pujol F.',
-        helpText: 'This is the content of the help file',
-        title: 'Here Goes our help info.'
+        helpText: 'App to display the weather. This application can be executed in the following link: https://raul-weather-app.herokuapp.com/ -> This link uses Heroku servers to run the nodejs code.',
+        title: 'Help Information:'
     })
 })
 
 app.get('/about', (request, response) => {
     response.render('about', {
-        title: 'Here is our about file',
+        title: 'Info about the site creator and sources.',
         name: 'Juan Raul Pujol F.'
     })
 })
